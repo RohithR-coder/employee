@@ -1,0 +1,19 @@
+@model PayslipApp.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payslip</title>
+</head>
+<body>
+    <h2>Employee Payslip</h2>
+
+    <p><strong>ID:</strong> @Model.Id</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Basic Salary:</strong> ₹@Model.BasicSalary</p>
+    <p><strong>HRA:</strong> ₹@Model.HRA</p>
+    <p><strong>DA:</strong> ₹@Model.DA</p>
+    <hr>
+    <h3>Net Salary: ₹@Model.NetSalary</h3>
+</body>
+</html>
